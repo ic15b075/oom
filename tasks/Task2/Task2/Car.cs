@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    class Car
+    class Car:vehicle
     {
         private Boolean fuel; // true = Benzin, false = Diesel
         private String color; // Farbe des Autos
@@ -63,6 +63,9 @@ namespace Task2
 
         }
 
+        public string Look => Color;
+        
+
         public void ChangeTank(int tank)
         {
             if ((tank <=0)|| (tank>100))
@@ -93,5 +96,8 @@ namespace Task2
                 return sum;
             }
         }
+
+
+
     }
 }
