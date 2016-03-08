@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Task2
 {
@@ -21,8 +22,16 @@ namespace Task2
             vehicle [] v= new vehicle[] {a,b,c,d};
             for (var i = 0; i < 4; i++)
             {
-                Console.WriteLine(v[i].Look);
+               Console.WriteLine(v[i].Look);
             }
+
+            vehicle[] v1 = new vehicle [] { a, b, c, d };
+            
+                string s = JsonConvert.SerializeObject(v1);
+                Console.WriteLine(s);
+
+
+
 
             Console.WriteLine("Tankgrösse Auto a:"+ a.Tank);
             Console.WriteLine("Farbe von Auto a:"+ a.Color);
