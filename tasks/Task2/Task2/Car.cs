@@ -43,6 +43,7 @@ namespace Task2
             }
             set
             {
+                if (value == "") throw new Exception(" Farbe muss ausgefuellt sein");
                 this.color = value;
             }
         }

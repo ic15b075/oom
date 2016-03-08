@@ -46,7 +46,7 @@ namespace Task2
             }
             set
             {
-                if (value <= 0) throw new Exception(" Tankgröße kann nicht negativ sein");
+                if ((value <= 0) ||(value==0))throw new Exception(" Tankgröße kann nicht negativ sein");
 
                 this.tank = value;
             }
