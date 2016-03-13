@@ -25,10 +25,8 @@ namespace Task2
                Console.WriteLine(v[i].Look);
             }
 
-            vehicle[] v1 = new vehicle [] { a, b, c, d };
-            
-                string s = JsonConvert.SerializeObject(v1);
-                Console.WriteLine(s);
+            Serialization.Run(v);
+           
 
 
 
